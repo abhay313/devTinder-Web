@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 const UserCard = ({ user }) => {
   const { firstName, lastName, age, gender, about, photoUrl } = user;
   return (
-    <div className="card card-compact bg-base-300 w-96 shadow-xl items-center mx-auto my-20 ">
+    <div className="card card-compact bg-base-300 w-96 shadow-xl items-center ">
       <figure>
         <img className="p-2 m-2" src={photoUrl} alt="user_pic" />
       </figure>
