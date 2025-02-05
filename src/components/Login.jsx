@@ -18,6 +18,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
+      console.log(BASE_URL);
       const res = await axios.post(
         BASE_URL + "/login",
         {
@@ -26,6 +27,7 @@ const Login = () => {
         },
         { withCredentials: true }
       );
+      console.log("Done");
       dispatch(addUser(res.data));
       return navigate("/");
     } catch (error) {

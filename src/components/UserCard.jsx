@@ -10,7 +10,7 @@ const UserCard = ({ user }) => {
 
   const handleSendRequest = async (status, userId) => {
     try {
-      const res = await axios.post(
+      await axios.post(
         BASE_URL + "/request/send/" + status + "/" + userId,
         {},
         {
@@ -31,7 +31,7 @@ const UserCard = ({ user }) => {
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
         {age && gender && <p>{"Age: " + age + " Gender: " + gender}</p>}
-        <p>{about}</p>
+        {about && <p>{about}</p>}
         <div className="card-actions justify-center my-4">
           <button
             onClick={() => handleSendRequest("ignored", _id)}
