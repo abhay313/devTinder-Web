@@ -51,19 +51,19 @@ const Footer = () => {
         </a>
       </nav>
       <div>
-        <a href="/policies" target="_blank">
+        <a href="/policies" target="_blank" rel="noopener noreferrer">
           Privacy Policies
         </a>
-        <a href="/refund" target="_blank">
+        <a href="/refund" target="_blank" rel="noopener noreferrer">
           Refuncd and Cancellation
         </a>
-        <a href="/terms" target="_blank">
+        <a href="/terms" target="_blank" rel="noopener noreferrer">
           Terms and Conditions
         </a>
-        <a href="/delivery" target="_blank">
+        <a href="/delivery" target="_blank" rel="noopener noreferrer">
           Shipping and Delivery
         </a>
-        <a href="/contacts" target="_blank">
+        <a href="/contacts" target="_blank" rel="noopener noreferrer">
           Contact Us
         </a>
       </div>
