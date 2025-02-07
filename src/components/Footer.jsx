@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="footer bg-base-300 text-neutral-content p-4 fixed bottom-0">
