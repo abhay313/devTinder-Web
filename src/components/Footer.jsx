@@ -53,11 +53,21 @@ const Footer = () => {
         </a>
       </nav>
       <div>
-        <Link to="/policies"> Privacy Policies</Link>
-        <Link to="/refund"> Refuncd and Cancellation</Link>
-        <Link to="/terms"> Terms and Conditions</Link>
-        <Link to="/delivery"> Shipping and Delivery</Link>
-        <Link to="/contacts"> Contact Us</Link>
+        <a href="/policies" target="_blank">
+          Privacy Policies
+        </a>
+        <a href="/refund" target="_blank">
+          Refuncd and Cancellation
+        </a>
+        <a href="/terms" target="_blank">
+          Terms and Conditions
+        </a>
+        <a href="/delivery" target="_blank">
+          Shipping and Delivery
+        </a>
+        <a href="/contacts" target="_blank">
+          Contact Us
+        </a>
       </div>
     </footer>
   );
