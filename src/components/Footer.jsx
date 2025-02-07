@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer bg-base-300 text-neutral-content p-4 fixed bottom-0">
@@ -50,6 +52,13 @@ const Footer = () => {
           </svg>
         </a>
       </nav>
+      <div>
+        <Link to="/policies"> Privacy Policies</Link>
+        <Link to="/refund"> Refuncd and Cancellation</Link>
+        <Link to="/terms"> Terms and Conditions</Link>
+        <Link to="/delivery"> Shipping and Delivery</Link>
+        <Link to="/contacts"> Contact Us</Link>
+      </div>
     </footer>
   );
 };
