@@ -7,11 +7,12 @@ import appStore from "./utils/appStore";
 import Feed from "./components/Feed";
 import Connections from "./components/Connections";
 import Requests from "./components/Requests";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import RefundAndCancellation from "./components/RefundAndCancellation";
-import ShippingAndDelivery from "./components/ShippingAndDelivery";
-import ContactUs from "./components/ContactUs";
-import TermsAndConditions from "./components/TermsAndConditions";
+// import PrivacyPolicy from "./components/PrivacyPolicy";
+// import RefundAndCancellation from "./components/RefundAndCancellation";
+// import ShippingAndDelivery from "./components/ShippingAndDelivery";
+// import ContactUs from "./components/ContactUs";
+// import TermsAndConditions from "./components/TermsAndConditions";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -25,11 +26,12 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/connections" element={<Connections />} />
               <Route path="/requests" element={<Requests />} />
-              <Route path="/policies" element={<PrivacyPolicy />} />
+              <Route path="/chat/:targetUserId" element={<Chat />} />
+              {/* <Route path="/policies" element={<PrivacyPolicy />} />
               <Route path="/refund" element={<RefundAndCancellation />} />
               <Route path="/terms" element={<TermsAndConditions />} />
               <Route path="/delivery" element={<ShippingAndDelivery />} />
-              <Route path="/contacts" element={<ContactUs />} />
+              <Route path="/contacts" element={<ContactUs />} /> */}
             </Route>
           </Routes>
         </BrowserRouter>
